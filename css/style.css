@@ -1,0 +1,431 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    background-color: #ececec;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    color: #FFFFFF;
+    ;
+    background-color: #9aba36;
+}
+
+.a2545s {
+    color: #748D26;
+}
+
+.header-bar {
+    font-size: 150%;
+    margin-top: 12px;
+    margin-right: 50px;
+}
+
+.links-title {
+    color: #748D26;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: -20px;
+}
+
+.ruler {
+    color: #000;
+    background-color: #000;
+    height: 1px;
+    margin-bottom: 5px;
+}
+
+
+/*.fotorama-img {
+    border: 1px solid #;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}*/
+
+
+/*.fotorama__caption {
+    color: #000;
+}
+
+/*.fotorama__caption__wrap{
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+*/
+
+.subtitle {
+    color: #000;
+}
+
+.pdf-viewer {
+    margin-top: 50px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.leidingsploeg {
+    position: absolute;
+    top: 12px;
+    bottom: -20px;
+    left: 0px;
+    right: 0px;
+    background-image: url(../images/wieiswie2014-2015.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.page-element {
+    /*background-color: #DFE2DB;*/
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    padding: 5px;
+    overflow: hidden;
+    margin-left: -7px;
+    margin-right: -7px;
+}
+
+.text-image {
+    border-radius: 10px;
+    padding-right: 5px;
+    float: left;
+    border-radius: 0 !important;
+}
+
+.text-paragraph {
+    /*background-color: # ;*/
+    border: 5px solid transparent;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 0px;
+    text-align: justify;
+}
+
+.lied {
+    text-align: center;
+}
+
+@media (max-width: 1180px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #fff;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
+@keyframes img-grow {
+    from {
+        margin-left: -80px
+    }
+    to {
+        margin-left: -10px
+    }
+}
+
+@keyframes move-text {
+    from {
+        margin-left: 0px;
+        margin-right: 114px;
+        font-size: 150%;
+    }
+    to {
+        margin-left: 69px;
+        margin-right: 8px;
+        font-size: 180%;
+    }
+}
+
+@keyframes move-a25 {
+    from {
+        font-size: 20px;
+        margin-left: 180px;
+        margin-top: -20px;
+    }
+    to {
+        font-size: 25px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+.logo-visible {
+    position: absolute;
+    height: 90%;
+    margin-left: -10px;
+    float: left;
+    margin-top: 3px;
+    animation-name: img-grow;
+    animation-duration: 0.8s;
+}
+
+.logo-hidden {
+    margin-left: -100px;
+    height: 0px;
+    position: absolute;
+}
+
+.scrolledTop {
+    position: relative;
+    margin-top: 22px;
+}
+
+.largeNav .navbar-header .A2545S {
+    position: absolute;
+    font-size: 25px;
+    animation-name: move-a25;
+    animation-duration: 0.8s;
+}
+
+.largeNav .navbar-header .scouts {
+    font-size: 180%;
+    height: 50px;
+    margin-left: 69px;
+    margin-right: 8px;
+    animation-name: move-text;
+    animation-duration: 0.8s;
+}
+
+
+/* navbar */
+
+.navbar-default {
+    background-color: #748d26;
+    border-color: #748d26;
+}
+
+
+/* title */
+
+.navbar-default .navbar-brand {
+    color: #777;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+
+
+/* link */
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #FFFFFF;
+    background-color: #2E7D32;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #441e00;
+}
+
+
+/* caret */
+
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+
+
+/* mobile version */
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #fff;
+    }
+}
+
+.header-bar {
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'dcc_-_ashregular';
+    src: url('../fonts/dcc_-_ash-webfont.eot');
+    src: url('../fonts/dcc_-_ash-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/dcc_-_ash-webfont.woff2') format('woff2'), url('../fonts/dcc_-_ash-webfont.woff') format('woff'), url('../fonts/dcc_-_ash-webfont.ttf') format('truetype'), url('../fonts/dcc_-_ash-webfont.svg#dcc_-_ashregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sc {
+    font-family: 'dcc_-_ashregular';
+    font-size: 20px;
+}
+
+.sp {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 100%;
+}
+
+.A2545S {
+    font-family: 'Fjalla One', sans-serif;
+    color: #572600;
+    font-size: 20px;
+}
+
+.Scouts {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+}
+
+.txtfooter {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.tak-image {
+    margin-top: -90px;
+    width: 20%;
+    margin-left: 50px;
+    border: 7px solid #ffffff;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    float: right;
+}
+
+.page-element {
+    border-radius: 0 !important;
+}
+
+.img-circle {
+    width: 100%;
+}
+
+#kapoenen {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #EF5350;
+    width: 100%;
+}
+
+#welpen {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #FFA726;
+    width: 100%;
+}
+
+#jv {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #FFEE58;
+    width: 100%;
+}
+
+#v {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #66BB6A;
+    width: 100%;
+}
+
+#jins {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #42A5F5;
+    width: 100%;
+}
+
+#groepsleiding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #AB47BC;
+    width: 100%;
+}
+
+.carousel {
+    margin-bottom: 25px;
+}
