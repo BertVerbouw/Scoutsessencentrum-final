@@ -5,12 +5,6 @@ body {
     background-color: #ececec;
 }
 
-.navbar-default .navbar-nav > .active > a {
-    color: #FFFFFF;
-    ;
-    background-color: #9aba36;
-}
-
 .a2545s {
     color: #748D26;
 }
@@ -154,10 +148,10 @@ body {
 
 @keyframes img-grow {
     from {
-        margin-left: -80px
+        margin-left: -80px;
     }
     to {
-        margin-left: -10px
+        margin-left: -10px;
     }
 }
 
@@ -171,6 +165,37 @@ body {
         margin-left: 69px;
         margin-right: 8px;
         font-size: 180%;
+    }
+}
+
+@keyframes move-links {
+    from {
+        margin-top: -12px;
+    }
+    to {
+        margin-top: 0px;
+    }
+}
+
+@keyframes move-links-hover {
+    from {
+        height: 75px;
+        margin-top: 0px;
+    }
+    to {
+        height: 88px;
+        margin-top: -12px;
+    }
+}
+
+@keyframes move-links-small-hover {
+    from {
+        height: 50px;
+        margin-top: 0px;
+    }
+    to {
+        height: 55px;
+        margin-top: -5px;
     }
 }
 
@@ -205,7 +230,7 @@ body {
 
 .scrolledTop {
     position: relative;
-    margin-top: 22px;
+    margin-top: 25px;
 }
 
 .largeNav .navbar-header .A2545S {
@@ -224,12 +249,49 @@ body {
     animation-duration: 0.8s;
 }
 
+.largeNav .navbar-nav {
+    height: 75px;
+    background-color: #748d26;
+    border-color: #748d26;
+}
+
+.largeNav .navbar-nav > li {
+    height: 100%;
+    animation-name: move-links;
+    animation-duration: 0.4s;
+}
+
+.largeNav .navbar-nav > li > a {
+    height: 75px;
+    text-align: center;
+    line-height: 45px;
+    vertical-align: middle;
+}
+
+.largeNav .navbar-nav > li:hover {
+    margin-top: -12px;
+    height: 88px;
+    background-color: rgb(103, 126, 33);
+    animation-name: move-links-hover;
+    animation-duration: 0.4s;
+}
+
 
 /* navbar */
 
 .navbar-default {
     background-color: #748d26;
     border-color: #748d26;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 100%;
+}
+
+.navbar-small .nav >li:hover {
+    margin-top: -5px;
+    height: 55px;
+    background-color: rgb(103, 126, 33);
+    animation-name: move-links-small-hover;
+    animation-duration: 0.4s;
 }
 
 
@@ -251,20 +313,31 @@ body {
     color: #fff;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:hover {}
+
 .navbar-default .navbar-nav > li > a:focus {
     color: #fff;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a {
+    color: #FFFFFF;
+    background-color: rgb(103, 126, 33);
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+    animation: none;
+    background-color: rgb(103, 126, 33);
+    color: #FFFFFF;
+}
+
 .navbar-default .navbar-nav > .active > a:focus {
     color: #FFFFFF;
-    background-color: #2E7D32;
+    background-color: rgb(103, 126, 33);
 }
 
 .navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:hover {}
+
 .navbar-default .navbar-nav > .open > a:focus {
     color: #fff;
     background-color: #441e00;

@@ -11,14 +11,21 @@ var largeNav = function () {
         document.getElementById("scrollable").setAttribute("class", "scrolledTop");
         document.getElementById("logo-no-background").setAttribute("class", "logo-visible");
     } else {
-        document.getElementById("navbar").setAttribute("class", "navbar navbar-default navbar-fixed-top");
+        document.getElementById("navbar").setAttribute("class", "navbar navbar-default navbar-small navbar-fixed-top");
         document.getElementById("scrollable").setAttribute("class", "");
         document.getElementById("logo-no-background").setAttribute("class", "logo-hidden");
     }
 
 }
 
-window.onload = largeNav;
+var onLoad = function () {
+    largeNav();
+    var x = document.getElementById("logo-no-background");
+    x.src = "images/logo_black_no_background.png";
+
+}
+
+window.onload = onLoad;
 window.onscroll = largeNav;
 window.onresize = largeNav;
 
